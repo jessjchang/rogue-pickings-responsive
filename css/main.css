@@ -162,3 +162,50 @@ footer span {
 	font-size: 0.875em;
 	text-transform: lowercase;
 }
+
+/*Tablet Styles*/
+@media all and (min-width: 768px) {
+	.bottom-section {
+		border-top: 1px solid #eee;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		border-top: none;
+		flex-basis: 30%;
+	}
+
+	.section-two {
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+        padding: 0 20px;
+    }
+ }
+
+/*Desktop Styles*/
+@media all and (min-width: 1200px) {
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header h1 {
+		border-bottom: none;
+		padding: 0;
+		text-align: left;
+		width: 30%;
+	}
+
+	header nav {
+		width: 40%;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
